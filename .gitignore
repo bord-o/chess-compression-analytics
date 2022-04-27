@@ -4,3 +4,4 @@
 *.uci
 *.pgn
 *.png
+!requirements.txt
