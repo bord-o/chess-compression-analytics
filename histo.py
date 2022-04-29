@@ -18,7 +18,7 @@ with open("lichess_res.txt", "r") as lichess_res:
     plt.plot(index[:pltpoints], freq[:pltpoints])
 
 
-with open("./35gd1stats.csv", "r") as res:
+with open("./modern35.csv", "r") as res:
 
     x = res.read().split(",")
     x.pop(-1)

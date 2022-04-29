@@ -65,8 +65,11 @@ def sort_legals(board, side):
     return sorted_eval.keys()
 
 encoded_games = []
+
+test_db = "./modern35.uci"
+write_file = "./modern35.csv"
 try:
-    with open("./1kgames_test.txt", "r") as game:
+    with open(test_db, "r") as game:
         g = game.read()
         game_arr = g.split("\n\n")
         games = len(game_arr)
@@ -83,13 +86,13 @@ try:
 except KeyboardInterrupt:
     print(encoded_games)
     stats = ''.join(encoded_games)
-    with open("./1kgames_test.csv", "w+") as statfile:
+    with open(write_file, "w+") as statfile:
         statfile.write(stats)
 
 else:
     print(encoded_games)
     stats = ''.join(encoded_games)
-    with open("./1kgames_test.csv", "w+") as statfile:
+    with open(write_file, "w+") as statfile:
         statfile.write(stats)
 '''
 with open("./promote.txt", "r") as prom:
