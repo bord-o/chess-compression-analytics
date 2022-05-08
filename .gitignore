@@ -4,5 +4,5 @@
 *.uci
 *.pgn
 *.png
+!moderndb.uci
 !requirements.txt
-!modern35.uci
