@@ -5,3 +5,4 @@
 *.pgn
 *.png
 !requirements.txt
+!modern35.uci
