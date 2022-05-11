@@ -1,8 +1,10 @@
+#!/usr/home/bordo/chess-compression-analytics/bin/python3.8
+
 import numpy as np
 import chess.engine
 from stockfish import Stockfish
 
-engine = Stockfish("/usr/games/stockfish", depth=1, parameters={"Threads": 1, "Minimum Thinking Time": 0, "Slow Mover": 0})
+engine = Stockfish("/usr/local/bin/stockfish", depth=1, parameters={"Threads": 1, "Minimum Thinking Time": 0, "Slow Mover": 0})
 
 # initialize board with starting position
 board = chess.Board()

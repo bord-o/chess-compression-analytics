@@ -6,3 +6,7 @@
 *.png
 !moderndb.uci
 !requirements.txt
+bin/
+lib/
+lib64
+pyvenv.cfg
